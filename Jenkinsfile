@@ -1,4 +1,4 @@
- node("docker-test") {
+ node("master") {
 
      stage("Unit Test"){
 
@@ -8,6 +8,6 @@
         sh "ls"
         sh "docker build ."
         sh "docker run"
-        
+
      }
  }
