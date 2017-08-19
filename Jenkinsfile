@@ -1,6 +1,6 @@
  node("docker-test") {
 
-     stage("Test"){
+     stage("Unit Test"){
 
      }
      stage("Deploy"){
