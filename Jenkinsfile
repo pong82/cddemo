@@ -6,8 +6,7 @@
      stage("Deploy"){
         checkout scm
         sh "ls"
-        sh "docker build ."
+        sh "docker build -t ng ."
         sh "docker run"
-
      }
  }
