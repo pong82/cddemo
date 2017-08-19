@@ -4,6 +4,8 @@
 
      }
      stage("Deploy"){
-
+        checkout scm
+        sh "ls"
+        sh "docker run"
      }
  }
