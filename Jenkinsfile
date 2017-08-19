@@ -8,5 +8,6 @@
         sh "ls"
         sh "docker build ."
         sh "docker run"
+        
      }
  }
