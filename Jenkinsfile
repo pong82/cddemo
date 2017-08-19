@@ -1,4 +1,4 @@
- node("master") {
+ node("docker-test") {
 
      stage("Unit Test"){
 
