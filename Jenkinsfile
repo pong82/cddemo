@@ -6,5 +6,6 @@
      stage("Deploy"){
         checkout scm
         sh "ls"
+        
      }
  }
