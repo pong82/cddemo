@@ -13,6 +13,7 @@
                 docker service create --name nginx -p80:80 ng
             else
                 docker service update --image ng nginx
+            fi
         '''
      }
  }
