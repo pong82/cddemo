@@ -10,7 +10,7 @@
         sh '''
             SERVICES=$(docker service ls --filter name=nginx --quiet | wc -l)
             if [[ "$SERVICES" -eq 0 ]]; then
-                docker service create --name nginx -p80:80 ng
+                docker service create --replicas 2 --update-delay 2s --name nginx -p80:80 ng
             else
                 sleep 2
                 docker service update --force --image ng nginx
