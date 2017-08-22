@@ -14,7 +14,8 @@
                 CONTAINER=$(docker ps | grep nginx | cut -c 1-12)
                 docker cp app1.conf "$CONTAINER":/etc/nginx/conf.d/
             else
-                docker service update --image ng nginx
+                sleep 2
+                docker service update --force --image ng nginx
                 CONTAINER=$(docker ps | grep nginx | cut -c 1-12)
                 docker cp app1.conf "$CONTAINER":/etc/nginx/conf.d/
             fi
