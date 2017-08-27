@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta http-equiv="cache-control" content="no-cache">
+        <meta http-equiv="refresh" content="5">
+    </head>
+
+    <body>
+        <H1>This is the dashboard page</H1>
+
+        <h2>Live Version</h2>
+        <script type="text/javascript">
+            var d=new Date();
+            document.write("<iframe src='/app1/env.html?"+ d.getSeconds() + d.getMilliseconds() + "' height=35px></iframe>");
+        </script>
+
+        <h2>Green Version</h2>
+        <script type="text/javascript">
+            var d=new Date();
+            document.write("<iframe src='/green/status.html?"+ d.getSeconds() + d.getMilliseconds() + "' height=35px></iframe>");
+        </script>
+
+        <h2>Blue Version</h2>
+        <script type="text/javascript">
+            var d=new Date();
+            document.write("<iframe src='/blue/status.html?"+ d.getSeconds() + d.getMilliseconds() + "' height=35px></iframe>");
+        </script>
+
+        <h2>Live Page</h2>
+        <script type="text/javascript">
+            var d=new Date();
+            document.write("<iframe src='/app1/index.php?"+ d.getSeconds() + d.getMilliseconds() + "'></iframe>");
+        </script>
+
+    </body>
+</html>
